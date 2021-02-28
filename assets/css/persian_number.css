@@ -1,0 +1,72 @@
+
+/* IRAN Sans Persian Number Black */
+@font-face {
+    font-family: 'IRANSansFaNumBlack';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../font/number/eot/IRANSansWeb(FaNum)_Black.eot');
+    src: url('../font/number/eot/IRANSansWeb(FaNum)_Black.eot?#iefix') format('embedded-opentype'),
+    url('../font/number/woff2/IRANSansWeb(FaNum)_Black.woff2') format('woff2'),
+    url('../font/number/woff/IRANSansWeb(FaNum)_Black.woff') format('woff'),
+    url('../font/number/ttf/IRANSansWeb(FaNum)_Black.ttf') format('truetype');
+}
+
+/* IRAN Sans Persian Number Bold */
+@font-face {
+    font-family: 'IRANSansFaNumBold';
+    font-style: normal;
+    font-weight: bold;
+    src: url('../font/number/eot/IRANSansWeb(FaNum)_Bold.eot');
+    src: url('../font/number/eot/IRANSansWeb(FaNum)_Bold.eot?#iefix') format('embedded-opentype'),
+    url('../font/number/woff2/IRANSansWeb(FaNum)_Bold.woff2') format('woff2'),
+    url('../font/number/woff/IRANSansWeb(FaNum)_Bold.woff') format('woff'),
+    url('../font/number/ttf/IRANSansWeb(FaNum)_Bold.ttf') format('truetype');
+}
+
+/* IRAN Sans Persian Number Medium */
+@font-face {
+    font-family: 'IRANSansFaNumMedium';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../font/number/eot/IRANSansWeb(FaNum)_Medium.eot');
+    src: url('../font/number/eot/IRANSansWeb(FaNum)_Medium.eot?#iefix') format('embedded-opentype'),
+    url('../font/number/woff2/IRANSansWeb(FaNum)_Medium.woff2') format('woff2'),
+    url('../font/number/woff/IRANSansWeb(FaNum)_Medium.woff') format('woff'),
+    url('../font/number/ttf/IRANSansWeb(FaNum)_Medium.ttf') format('truetype');
+}
+
+/* IRAN Sans Persian Number Light */
+@font-face {
+    font-family: 'IRANSansFaNumLight';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../font/number/eot/IRANSansWeb(FaNum)_Light.eot');
+    src: url('../font/number/eot/IRANSansWeb(FaNum)_Light.eot?#iefix') format('embedded-opentype'),
+    url('../font/number/woff2/IRANSansWeb(FaNum)_Light.woff2') format('woff2'),
+    url('../font/number/woff/IRANSansWeb(FaNum)_Light.woff') format('woff'),
+    url('../font/number/ttf/IRANSansWeb(FaNum)_Light.ttf') format('truetype');
+}
+
+/* IRAN Sans Persian Number Ultra Light */
+@font-face {
+    font-family: 'IRANSansFaNumUltraLight';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../font/number/eot/IRANSansWeb(FaNum)_UltraLight.eot');
+    src: url('../font/number/eot/IRANSansWeb(FaNum)_UltraLight.eot?#iefix') format('embedded-opentype'),
+    url('../font/number/woff2/IRANSansWeb(FaNum)_UltraLight.woff2') format('woff2'),
+    url('../font/number/woff/IRANSansWeb(FaNum)_UltraLight.woff') format('woff'),
+    url('../font/number/ttf/IRANSansWeb(FaNum)_UltraLight.ttf') format('truetype');
+}
+
+/* IRAN Sans Persian Number Regular */
+@font-face {
+    font-family: 'IRANSansFaNumRegular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../font/number/eot/IRANSansWeb(FaNum).eot');
+    src: url('../font/number/eot/IRANSansWeb(FaNum).eot?#iefix') format('embedded-opentype'),
+    url('../font/number/woff2/IRANSansWeb(FaNum).woff2') format('woff2'),
+    url('../font/number/woff/IRANSansWeb(FaNum).woff') format('woff'),
+    url('../font/number/ttf/IRANSansWeb(FaNum).ttf') format('truetype');
+}

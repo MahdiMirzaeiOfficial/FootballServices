@@ -1,0 +1,22 @@
+/* Import Styles */
+@import './web_font.css';
+@import './persian_number.css';
+
+:lang(fa) {
+    direction: rtl;
+    text-align: right;
+}
+
+:lang(en) {
+    direction: ltr;
+    text-align: left;
+}
+
+body {
+    font-family: 'IranSansWebRegular', sans-serif;
+    font-size: 14px;
+}
+
+.persian-number {
+    font-family: 'IranSansFaNumRegular';
+}
