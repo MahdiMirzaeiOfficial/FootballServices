@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>خدمات فوتبالی | افزودن باشگاه فوتبال</title>
+    <title>خدمات فوتبالی | ثبت باشگاه فوتبال</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.rtl.min.css"
         integrity="sha384-4dNpRvNX0c/TdYEbYup8qbjvjaMrgUPh+g4I03CnNtANuv+VAvPL6LqdwzZKV38G" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
@@ -15,17 +15,68 @@
     <section class="container-fluid">
         <header class="row">
             <section class="col-12">
-                <h1 class="text-center bg-primary text-light p-5">افزودن باشگاه فوتبال</h1>
+                <h1 class="text-center bg-primary text-light p-5">ثبت باشگاه فوتبال</h1>
             </section>
         </header>
         <main class="row justify-content-center mt-1">
             <section class="col-8">
                 <form action="add_football_club.php" method="post">
                     <section class="form-group">
-                        
+                        <label for="club_name" class="form-label">نام باشگاه</label>
+                        <input type="text" name="club_name" id="club_name" class="form-control">
+                    </section>
+                    <section class="form-group">
+                        <label for="club_special_stadium_name" class="form-label">نام ورزشگاه اختصاصی</label>
+                        <input type="text" name="club_special_stadium_name" id="club_special_stadium_name"
+                            class="form-control">
+                    </section>
+                    <section class="form-group">
+                        <label for="club_year_founding" class="form-label">سال تأسیس باشگاه</label>
+                        <input type="date" name="club_year_founding" id="club_year_founding" class="form-control">
+                    </section>
+                    <section class="form-group">
+                        <label for="club_motto" class="form-label">شعار باشگاه</label>
+                        <input type="text" name="club_motto" id="club_motto" class="form-control">
+                    </section>
+                    <section class="form-group">
+                        <label for="club_owner" class="form-label">نام مالک کنونی باشگاه</label>
+                        <input type="text" name="club_owner" id="club_owner" class="form-control">
+                    </section>
+                    <section class="form-group">
+                        <label for="club_founder" class="form-label">نام بنیان گذار باشگاه</label>
+                        <input type="text" name="club_founder" id="club_founder" class="form-control">
+                    </section>
+                    <section class="form-group">
+                        <label for="club_sponsors" class="form-label">نام اسپانسر های باشگاه</label>
+                        <input type="text" name="club_sponsors" id="club_sponsors" class="form-control">
+                    </section>
+                    <section class="form-group">
+                        <label for="club_country" class="form-label">کشور</label>
+                        <input type="text" name="club_country" id="club_country" class="form-control">
+                    </section>
+                    <section class="form-group">
+                        <label for="club_city" class="form-label">شهر</label>
+                        <input type="text" name="club_city" id="club_city" class="form-control">
+                    </section>
+                    <section class="form-group">
+                        <label for="club_head_coach" class="form-label">نام سرمربی باشگاه</label>
+                        <input type="text" name="club_head_coach" id="club_head_coach" class="form-control">
+                    </section>
+                    <section class="form-group">
+                        <label for="club_logo" class="form-label">لوگو باشگاه</label>
+                        <input type="file" name="club_logo" id="club_logo" class="form-control">
+                    </section>
+                    <section class="form-group">
+                        <label for="club_special_stadium_image" class="form-label">عکس ورزشگاه اختصاصی</label>
+                        <input type="file" name="club_special_stadium_image" id="club_special_stadium_image"
+                            class="form-control">
+                    </section>
+                    <section class="form-group">
+                        <label for="club_official_song" class="form-label">سرود رسمی باشگاه</label>
+                        <input type="file" name="club_official_song" id="club_official_song" class="form-control">
                     </section>
                     <section class="d-grid mt-1 mb-1">
-                        <button type="submit" name="submit" class="btn btn-primary text-center">ثبت</button>
+                        <button type="submit" name="submit" class="btn btn-primary text-center">ثبت باشگاه</button>
                     </section>
                 </form>
             </section>
