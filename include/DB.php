@@ -4,10 +4,12 @@ if (!class_exists('DB')) {
     class DB
     {
         var $dbc;
-        function __construct()
+        function __construct($select_db = true)
         {
             $this->connect();
-            $this->select_db();
+            if ($select_db) {
+                $this->select_db();
+            }
             $this->dbc->set_charset(CHARSET);
         }
         function connect()

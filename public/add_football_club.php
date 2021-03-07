@@ -5,7 +5,7 @@ include '../include/functions.php';
 $alert = '';
 
 if (isset($_POST['submit'])) {
-    $sql = "INSERT INTO fs_football_club(club_name, club_special_stadium_name, club_year_founding, club_motto, club_owner, club_founder, club_sponsors,     club_country, club_city, club_head_coach, club_logo, club_special_stadium_image, club_official_song)
+    $sql = "INSERT INTO fs_football_club(club_name, club_special_stadium_name, club_year_founding, club_motto, club_owner, club_founder, club_sponsors, club_country, club_city, club_head_coach, club_logo, club_special_stadium_image, club_official_song)
 VALUES('{$_POST['club_name']}', '{$_POST['club_special_stadium_name']}', '{$_POST['club_year_founding']}', '{$_POST['club_motto']}', '{$_POST['club_owner']}', '{$_POST['club_founder']}', '{$_POST['club_sponsors']}', '{$_POST['club_country']}', '{$_POST['club_city']}', '{$_POST['club_head_coach']}', '{$_POST['club_logo']}', '{$_POST['club_special_stadium_image']}', '{$_POST['club_official_song']}')";
 
     $db = new DB();

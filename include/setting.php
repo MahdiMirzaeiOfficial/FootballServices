@@ -16,8 +16,14 @@ if (!defined('CHARSET')) {
     define('CHARSET', 'utf8mb4');
 }
 
+if (!defined('COLLATE')) {
+    define('COLLATE', 'utf8mb4_general_ci');
+}
+
 $host = HOST;
 $username = USERNAME;
 $password = PASSWORD;
 $database_name = DATABASE_NAME;
 $charset = CHARSET;
+$collate = COLLATE;
+$software_setup = false;
