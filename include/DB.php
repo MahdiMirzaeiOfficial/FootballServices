@@ -1,5 +1,9 @@
 <?php
 
+include 'FootballClub.php';
+include 'Message.php';
+include 'User.php';
+
 if (!class_exists('DB')) {
     class DB
     {

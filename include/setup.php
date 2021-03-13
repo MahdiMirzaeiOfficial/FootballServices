@@ -21,7 +21,7 @@ if ($result) {
 unset($db);
 
 $db = new DB();
-$sql = "CREATE TABLE IF NOT EXISTS fs_contact(
+$sql = "CREATE TABLE IF NOT EXISTS message(
 		id INT AUTO_INCREMENT NOT NULL,
 		full_name VARCHAR(128),
         email VARCHAR(256),
@@ -34,7 +34,7 @@ if ($result) {
     fs_alert('جدول تماس با ما با موفقیت ایجاد شد.', 'success');
 }
 
-$sql = "CREATE TABLE IF NOT EXISTS fs_football_club(
+$sql = "CREATE TABLE IF NOT EXISTS footballClub(
 		id INT AUTO_INCREMENT NOT NULL,
 		club_name VARCHAR(128),
         club_special_stadium_name VARCHAR(128),
@@ -56,7 +56,7 @@ if ($result) {
     fs_alert('جدول باشگاه ها با موفقیت ایجاد شد.', 'success');
 }
 
-$sql = "CREATE TABLE IF NOT EXISTS fs_user(
+$sql = "CREATE TABLE IF NOT EXISTS user(
     id INT AUTO_INCREMENT NOT NULL,
     full_name VARCHAR(128),
     email VARCHAR(256),

@@ -5,18 +5,14 @@ include '../include/functions.php';
 $alert = '';
 
 if (isset($_POST['submit'])) {
-    $sql = "INSERT INTO fs_contact(full_name, email, phone_number, message)
-VALUES('{$_POST['full_name']}', '{$_POST['email']}', '{$_POST['phone_number']}', '{$_POST['message']}')";
-
+    unset($_POST['submit']);
+    
     $db = new DB();
-
-    $result = $db->execute($sql);
+    Message::add($_POST);
 
     unset($db);
 
-    if ($result) {
-        $alert = fs_alert('با موفقیت ثبت شد.', 'success');
-    }
+    $alert = fs_alert('با موفقیت ثبت شد.', 'success');
 }
 
 ?>
