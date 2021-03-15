@@ -61,6 +61,7 @@ $sql = "CREATE TABLE IF NOT EXISTS user(
     full_name VARCHAR(128),
     email VARCHAR(256),
     phone_number VARCHAR(11),
+    profile VARCHAR(256),
     PRIMARY KEY(id)
     )ENGINE = INNODB";
 $result = $db->execute($sql);

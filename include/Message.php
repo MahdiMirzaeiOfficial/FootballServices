@@ -33,8 +33,15 @@ if (!class_exists('Message')) {
         static function delete()
         {
         }
-        static function find()
+        static function find($where = 'TRUE', $order = 'id DESC', $offset = 0, $count = 10000)
         {
+            $table_name = get_class();  // __CLASS__ Or self::class
+            $sql = "SELECT * FROM {$table_name}
+            WHERE {$where}
+            ORDER BY {$order}
+            LIMIT {$offset}, {$count}";
+            $table = $GLOBALS['db']->execute($sql);
+            return $table;
         }
     }
 }

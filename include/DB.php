@@ -38,7 +38,7 @@ if (!class_exists('DB')) {
                 die($error);
             }
         }
-        function execute($sql)
+        function execute($sql, $params = false)
         {
             $result = $this->dbc->query($sql);
             if ($this->dbc->error) {
@@ -50,8 +50,14 @@ if (!class_exists('DB')) {
                     </section>
                 ";
                 die($error);
+                return false;
+            } else if ($result !== true && $result !== false) { // Select
+                $table = $result->fetch_all(MYSQLI_ASSOC);
+                return $table;
+            } else if (isset($this->dbc->insert_id)) {
+                return $this->dbc->insert_id;
             } else {
-                return true;
+                return $result;
             }
         }
         function __destruct()

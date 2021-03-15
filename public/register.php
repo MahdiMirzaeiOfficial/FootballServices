@@ -5,9 +5,14 @@ include '../include/functions.php';
 $alert = '';
 
 if (isset($_POST['submit'])) {
+    $profile = 'assets/image/users/profile.png';
+    
     unset($_POST['submit']);
     
     $db = new DB();
+
+    $_POST['profile'] = $profile;
+    
     User::add($_POST);
 
     unset($db);
